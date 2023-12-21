@@ -1,0 +1,77 @@
+@import "colors";
+@import "variables";
+
+.header {
+  & .header__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 31px 40px;
+    & .header__nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      & .header__logo {
+        & .animal__logo-descriptions {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          & .logo__title {
+            color: $primary-dark-blue;
+            line-height: normal;
+            font : {
+              size: $primary-first;
+              weight: 700;
+            }
+          }
+        }
+        & .logo__subTitle {
+          color: $primary-dark-blue;
+          font: {
+            size: $primary-secondary;
+            weight: 500;
+          }
+        }
+      }
+      & .nav {
+        & .nav__menu {
+          padding-top: 24px;
+          display: flex;
+          gap: 20px;
+          & .nav__menu-item {
+            & .nav__menu-link {
+              color: $primary-dark-blue;
+              text-align: center;
+              font-size: $primary-third;
+            }
+            & .is--active {
+              color: $primary-hover-blue;
+              border-bottom: 1.5px solid $primary-hover-blue;
+            }
+          }
+        }
+      }
+      & .list__button-items {
+        display: flex;
+        gap: 24px;
+        & .header__select {
+          color: $primary-dark-blue;
+          font-size: $primary-third;
+          padding-left: 24px;
+        }
+        & .help {
+          padding: 16px 32px;
+          border-radius: 25px;
+          background: $primary-button-red;
+          color: $primary-white;
+          text-align: center;
+          box-shadow: 0px 0px 40px 0px $primary-button-shadow;
+          font: {
+            size: $primary-four;
+            weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
