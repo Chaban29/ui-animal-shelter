@@ -2,12 +2,12 @@
 @import "mixins";
 @import "reset";
 @import "header";
+@import "about";
 @import "colors";
 @import "variables";
 
-.App {
-  font-family: "Poppins", sans-serif !important;
-}
+
+
 
 .hero {
   .main__container {

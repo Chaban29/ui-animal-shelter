@@ -1,0 +1,11 @@
+@import "colors";
+@import "variables";
+@import "mixins";
+
+.about {
+  min-height: 100vh;
+  & .main__container {
+    @include mainContainer;
+  }
+}
+
