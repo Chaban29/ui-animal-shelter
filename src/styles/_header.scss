@@ -11,14 +11,20 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: center;
       & .header__logo {
+        display: flex;
+        align-items: flex-end;
+        & .header__logo-image {
+          max-width: 55px;
+          max-height: 54px;
+        }
         & .animal__logo-descriptions {
           display: flex;
           flex-direction: column;
           gap: 2px;
           & .logo__title {
             color: $primary-dark-blue;
-            line-height: normal;
             font : {
               size: $primary-first;
               weight: 700;
@@ -35,7 +41,6 @@
       }
       & .nav {
         & .nav__menu {
-          padding-top: 24px;
           display: flex;
           gap: 20px;
           & .nav__menu-item {

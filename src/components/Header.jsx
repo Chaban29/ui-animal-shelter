@@ -1,9 +1,12 @@
+import Logo from "../images/header/Logo.png";
+
 const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
         <div className="header__nav">
           <div className="header__logo">
+            <img src={Logo} alt="" className="header__logo-image" />
             <div className="animal__logo-descriptions">
               <h4 className="logo__title">ХАТИНА</h4>
               <span className="logo__subTitle">притулок для тварин</span>
