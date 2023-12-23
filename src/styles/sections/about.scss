@@ -1,0 +1,57 @@
+@import "../colors";
+@import "../variables";
+@import "../mixins";
+
+
+.about {
+  padding: 120px 0;
+  & .main__container {
+    @include mainContainer;
+  }
+}
+.about__content-block {
+  display: flex;
+  justify-content: space-between;
+  & .about__image-item {
+    background: url(./images/about/dog-2.png);
+    background-repeat: no-repeat;
+    & .about__decoration-item {
+      position: relative;
+      left: 0px;
+      bottom: 7px;
+    }
+  }
+  & .about__article {
+    max-width: 671px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    & .aboutUs__title {
+      color: $primary-dark-blue;
+      line-height: 130%;
+      font : {
+        size: $primary-about-title;
+        weight: 800;
+      }
+    }
+    & .aboutUs__subTitle {
+      max-width: 680px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 9;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      color: $primary-subTitile-gray;
+      line-height: normal;
+      font: {
+        size: $primary-four;
+        weight: 500;
+      }
+    }
+    & .about__button-item {
+      & .about__btn {
+        @include mainButton;
+      }
+    }
+  }
+}
