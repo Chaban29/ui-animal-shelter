@@ -1,0 +1,27 @@
+@import "../colors";
+@import "../variables";
+@import "../mixins";
+
+.ourTerms {
+  min-height: 100vh;
+  & .main__container {
+    @include mainContainer;
+  }
+}
+
+.ourTerms__content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  & .ourTerms__title {
+    & .ourTerms__title-item {
+      color: $primary-dark-blue;
+      text-align: center;
+      line-height: 130%;
+      font: {
+        size: $primary-about-title;
+        weight: 800;
+      }
+    }
+  }
+}
