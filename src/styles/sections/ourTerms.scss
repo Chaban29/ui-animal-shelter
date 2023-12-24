@@ -3,7 +3,6 @@
 @import "../mixins";
 
 .ourTerms {
-  min-height: 100vh;
   & .main__container {
     @include mainContainer;
   }
@@ -13,6 +12,7 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
+  padding-bottom: 186px;
   & .ourTerms__title {
     & .ourTerms__title-item {
       color: $primary-dark-blue;

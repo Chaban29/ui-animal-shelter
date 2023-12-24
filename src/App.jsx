@@ -4,6 +4,8 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Choose from "./components/Choose/Choose";
 import OurTerms from "./components/OurTerms/OurTerms";
+import Location from "./components/Location/Location";
+
 import "./styles/main.scss";
 
 const App = () => {
@@ -15,6 +17,7 @@ const App = () => {
         <About />
         <Choose />
         <OurTerms />
+        <Location />
       </main>
     </div>
   );

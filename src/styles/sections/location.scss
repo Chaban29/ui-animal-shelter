@@ -1,0 +1,42 @@
+@import "../colors";
+@import "../variables";
+@import "../mixins";
+
+.location {
+  & .main__container {
+    @include mainContainer;
+  }
+}
+
+.location__content {
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  & .location__title-item {
+    text-align: center;
+    & .location-title {
+      color: $primary-dark-blue;
+      line-height: 130%;
+      font: {
+        size: $primary-about-title;
+        weight: 800;
+      }
+    }
+  }
+  & .location__bg-item {
+    display: flex;
+    justify-content: center;
+    background: url(./images/location/Basemap.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    & .map-pin {
+      position: relative;
+      left: 165px;
+      bottom: 35px;
+    }
+  }
+}
