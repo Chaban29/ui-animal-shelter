@@ -24,4 +24,68 @@
       }
     }
   }
+  & .ourTerms__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    & .terms__card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      & .terms__titles {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        & .terms-title {
+          color: $primary-hover-blue;
+          line-height: normal;
+          font: {
+            size: $primary-card-title;
+            weight: 700;
+          }
+        }
+        & .terms-subTitle {
+          color: $primary-subTitile-gray;
+          line-height: normal;
+          font: {
+            size: $primary-four;
+            weight: 500;
+          }
+        }
+      }
+      & .one-bg {
+        width: 100%;
+        background: url(../sections/images/ourTermsImages/Image_01.png);
+        background-repeat: no-repeat;
+      }
+      & .two-bg {
+        width: 100%;
+        background: url(../sections/images/ourTermsImages/Image_02.png);
+        background-repeat: no-repeat;
+      }
+      & .third-bg {
+        width: 100%;
+        background: url(../sections/images/ourTermsImages/Image_03.png);
+        background-repeat: no-repeat;
+      }
+      & .decor-pos {
+        position: relative;
+        left: 7px;
+        bottom: -5px;
+      }
+      & .decor-posTwo {
+        position: relative;
+        top: 3px;
+        left: 5px;
+      }
+      & .decor-posThird {
+        position: relative;
+        top: 3px;
+        left: -8px;
+      }
+    }
+    & .two-card {
+      flex-direction: column-reverse;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import TermsItem from "../OurTerms/TermsItem/TermsItem";
+import TermsItem from "./TermsItem";
 
 const OurTerms = (props) => {
   return (
