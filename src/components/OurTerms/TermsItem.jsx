@@ -37,7 +37,11 @@ const TermsItem = (props) => {
           </p>
         </div>
         <div className="terms__card-image third-bg">
-          <img src={decorThird} alt="Decor" className="card-image decor-posThird" />
+          <img
+            src={decorThird}
+            alt="Decor"
+            className="card-image decor-posThird"
+          />
         </div>
       </div>
     </Fragment>

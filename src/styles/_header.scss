@@ -2,7 +2,7 @@
 @import "variables";
 
 .header {
-  & .header__container {
+  &__container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -40,7 +40,7 @@
         }
       }
       & .nav {
-        & .nav__menu {
+        &__menu {
           display: flex;
           gap: 20px;
           & .nav__menu-item {

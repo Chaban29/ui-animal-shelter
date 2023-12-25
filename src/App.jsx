@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Choose from "./components/Choose/Choose";
 import OurTerms from "./components/OurTerms/OurTerms";
 import Location from "./components/Location/Location";
+import Contacts from "./components/Contacts/Contacts";
 
 import "./styles/main.scss";
 
@@ -18,6 +19,7 @@ const App = () => {
         <Choose />
         <OurTerms />
         <Location />
+        <Contacts/>
       </main>
     </div>
   );
