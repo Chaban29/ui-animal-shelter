@@ -23,16 +23,16 @@ const Contacts = (props) => {
                 <div className="question__address--first">
                   <span className="question__address--title">Адреса</span>
                   <span className="question__address--subTitle">
-                    cмт. Жук м. <br /> Івано-Франківська область
+                    cмт. Жук <br /> м. Івано-Франківська область
                   </span>
                 </div>
                 <div className="question__address--second">
                   <span className="question__address--title">Телефон</span>
                   <div className="question__address--phones">
-                    <a href="tel+380991234567" className="second--tell">
+                    <a href="tell+380991234567" className="second--tell">
                       +38 (099) 123 45 67
                     </a>
-                    <a href="tel+380991234567" className="second--tell">
+                    <a href="tell+380991234567" className="second--tell">
                       +38 (088) 123 45 67
                     </a>
                   </div>
@@ -41,7 +41,10 @@ const Contacts = (props) => {
                   <span className="question__address--title">
                     Електронна адреса
                   </span>
-                  <a href='malito:hatyna@gmail.com' className="question__address--email">
+                  <a
+                    href="malito:hatyna@gmail.com"
+                    className="question__address--email"
+                  >
                     hatyna@gmail.com
                   </a>
                 </div>

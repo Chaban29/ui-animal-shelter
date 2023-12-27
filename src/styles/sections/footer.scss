@@ -1,0 +1,12 @@
+@import "../colors";
+@import "../variables";
+@import "../mixins";
+
+
+.footer {
+  min-height: 100vh;
+  border-top: 1.5px solid $primary-dark-blue;
+  & .main__container {
+    @include mainContainer;
+  }
+}

@@ -6,21 +6,26 @@ import Choose from "./components/Choose/Choose";
 import OurTerms from "./components/OurTerms/OurTerms";
 import Location from "./components/Location/Location";
 import Contacts from "./components/Contacts/Contacts";
-
+import HowToHelp from "./components/HowToHelp/HowToHelp";
+import Footer from "./components/Footer/Footer";
 import "./styles/main.scss";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" id="App">
       <Header />
-      <main className="main">
+      <main className="main" id="main">
         <Hero />
         <About />
         <Choose />
         <OurTerms />
         <Location />
-        <Contacts/>
+        <Contacts />
+        <HowToHelp />
       </main>
+      <footer className="footer" id="footer">
+        <Footer />
+      </footer>
     </div>
   );
 };

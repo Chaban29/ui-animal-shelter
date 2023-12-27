@@ -15,7 +15,7 @@
       & .header__logo {
         display: flex;
         align-items: flex-end;
-        & .header__logo-image {
+        &-image {
           max-width: 55px;
           max-height: 54px;
         }
