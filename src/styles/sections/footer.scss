@@ -2,11 +2,127 @@
 @import "../variables";
 @import "../mixins";
 
-
 .footer {
-  min-height: 100vh;
   border-top: 1.5px solid $primary-dark-blue;
   & .main__container {
     @include mainContainer;
+  }
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 48px 0px;
+}
+
+.footer__social--block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 212px;
+}
+
+.footer__logo--block {
+  display: flex;
+}
+.footer__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer__title {
+  color: $primary-dark-blue;
+  font-size: $primary-first;
+  font-weight: 800;
+}
+
+.footer__subTitle {
+  color: $primary-dark-blue;
+  font-size: $primary-secondary;
+  font-weight: 500;
+}
+
+.footer__logo {
+  max-width: 55px;
+  max-height: 50px;
+}
+
+.footer__logo--description {
+  color: $primary-dark-blue;
+  font-size: $primary-third;
+  line-height: normal;
+}
+
+.footer__social--media {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 70px;
+}
+
+.footer__first--menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & .first__item {
+    & .footer__link {
+      color: $primary-dark-blue;
+      font-size: $primary-third;
+      line-height: normal;
+    }
+  }
+}
+
+.footer__second--menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & .second__item {
+    & .footer__link {
+      color: $primary-dark-blue;
+      font-size: $primary-third;
+      line-height: normal;
+    }
+  }
+}
+
+.footer__third--menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & .third__item {
+    & .footer__link {
+      color: $primary-dark-blue;
+      font-size: $primary-third;
+      line-height: normal;
+    }
+  }
+}
+
+.footer__info--item {
+  & .info__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    & .info-item {
+      color: $primary-dark-blue;
+      font-size: $primary-third;
+      line-height: normal;
+    }
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  & .footer-copy {
+    color: $primary-subTitile-gray;
+    font-size: $primary-third;
+    line-height: normal;
   }
 }
